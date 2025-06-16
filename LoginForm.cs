@@ -22,25 +22,31 @@ namespace Farm_School
             string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, pattern);
         }
-
-
-        private void titlelbl_Click(object sender, EventArgs e)
+      
+        private void Loginbtn_Click(object sender, EventArgs e)
         {
-
+            
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
 
+        private void LinkLabel1_LinkClicked(object sender, EventArgs e)
+        {
+           
         }
 
-        private void loginbtn_Click(object sender, EventArgs e)
+        private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            string role = rolecmb.SelectedItem?.ToString();
+            SignupForm signupform = new SignupForm();
+            signupform.Show();
+            this.Hide();
+        }
+
+        private void Loginbtn_Click_1(object sender, EventArgs e)
+        {
             string email = emailtxt.Text.Trim();
             string password = passtxt.Text;
 
-            if (string.IsNullOrWhiteSpace(role) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please fill all the fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -57,36 +63,19 @@ namespace Farm_School
             {
                 MessageBox.Show("Successfully Logged in");
 
-                // Open Homepage
-                 /* Homepage homepage = new Homepage();
-                    homepage.Show();*/
-                 
-
-                // Hide current (Login) form
-                this.Hide();
+                // Open Admin dashboard
+                if (email == "admin@farmschool.com" && password == "admin123")
+                {
+                    adminForm adminForm = new adminForm();
+                    adminForm.Show();
+                    // Hide current (Login) form
+                    this.Hide();
+                }
             }
             else
             {
                 MessageBox.Show("Login Failed");
             }
-        }
-
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void signupbtn_Click(object sender, EventArgs e)
-        {
-            SignupForm signupform = new SignupForm();
-            signupform.Show();
-            this.Hide();
-        }
-
-        private void emailtxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
         }
     }
 }

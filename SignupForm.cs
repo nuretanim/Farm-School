@@ -16,14 +16,11 @@ namespace Farm_School
         public SignupForm()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void rolecmb_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void Rolecmb_SelectedIndexChanged(object sender, EventArgs e)
         {
             string role = rolecmb.SelectedItem.ToString();
             if (role == "Instructor")
@@ -38,7 +35,7 @@ namespace Farm_School
             }
         }
 
-        private void signupbtn_Click(object sender, EventArgs e)
+        private void Signupbtn_Click(object sender, EventArgs e)
         {
             string role = rolecmb.SelectedItem?.ToString();
             string fname = fnametxt.Text;
@@ -46,15 +43,14 @@ namespace Farm_School
             string password = passtxt.Text;
             string confirmPassword = confirmpasstxt.Text;
             string location = locationtxt.Text;
-            string expertise = (expertisecmb.Visible) ? expertisecmb.SelectedItem?.ToString() : null;
+            string Expertise = (expertisecmb.Visible) ? expertisecmb.SelectedItem?.ToString() : null;
 
             // Only capture expertise if the role is Instructor
-            string ifexpertise = "";
             if (role == "Instructor")
             {
-                expertise = expertisecmb.SelectedItem?.ToString()?.Trim();
+                Expertise = expertisecmb.SelectedItem?.ToString()?.Trim();
 
-                if (string.IsNullOrWhiteSpace(expertise))
+                if (string.IsNullOrWhiteSpace(Expertise))
                 {
                     MessageBox.Show("Please select an area of expertise for the Instructor.");
                     return;
@@ -97,12 +93,77 @@ namespace Farm_School
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             
             LoginForm loginForm = new LoginForm();  
             loginForm.Show();
             this.Close();
+        }
+
+        private void Emailtxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Rolelbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Xpertiselbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Locationlbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Confirmpasstxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Passtxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Locationtxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Fnametxt_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void Confirmpasslbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Passlbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Expertisecmb_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Fnamelbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Emaillbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

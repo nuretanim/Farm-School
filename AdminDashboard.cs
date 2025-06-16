@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Farm_School
 {
-    public partial class Form1 : Form
+    public partial class adminForm : Form
     {
-        public Form1()
+        public adminForm()
         {
             InitializeComponent();
+        }
+
+        private void AdminForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ManageInstructorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ADDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
