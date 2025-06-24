@@ -44,7 +44,7 @@
             this.titlelbl.BackColor = System.Drawing.Color.Transparent;
             this.titlelbl.Font = new System.Drawing.Font("Britannic Bold", 35F);
             this.titlelbl.ForeColor = System.Drawing.Color.Black;
-            this.titlelbl.Location = new System.Drawing.Point(326, 105);
+            this.titlelbl.Location = new System.Drawing.Point(269, 87);
             this.titlelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titlelbl.Name = "titlelbl";
             this.titlelbl.Size = new System.Drawing.Size(318, 52);
@@ -54,7 +54,7 @@
             // emailtxt
             // 
             this.emailtxt.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailtxt.Location = new System.Drawing.Point(467, 252);
+            this.emailtxt.Location = new System.Drawing.Point(390, 214);
             this.emailtxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.emailtxt.Name = "emailtxt";
             this.emailtxt.Size = new System.Drawing.Size(150, 22);
@@ -66,7 +66,7 @@
             this.emaillbl.BackColor = System.Drawing.Color.Transparent;
             this.emaillbl.Font = new System.Drawing.Font("Times New Roman", 14F);
             this.emaillbl.ForeColor = System.Drawing.Color.Black;
-            this.emaillbl.Location = new System.Drawing.Point(371, 253);
+            this.emaillbl.Location = new System.Drawing.Point(293, 215);
             this.emaillbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emaillbl.Name = "emaillbl";
             this.emaillbl.Size = new System.Drawing.Size(57, 21);
@@ -78,7 +78,7 @@
             this.passlbl.AutoSize = true;
             this.passlbl.BackColor = System.Drawing.Color.Transparent;
             this.passlbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.passlbl.Location = new System.Drawing.Point(371, 308);
+            this.passlbl.Location = new System.Drawing.Point(293, 268);
             this.passlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passlbl.Name = "passlbl";
             this.passlbl.Size = new System.Drawing.Size(84, 21);
@@ -88,7 +88,7 @@
             // loginbtn
             // 
             this.loginbtn.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.loginbtn.Location = new System.Drawing.Point(458, 380);
+            this.loginbtn.Location = new System.Drawing.Point(377, 332);
             this.loginbtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loginbtn.Name = "loginbtn";
             this.loginbtn.Size = new System.Drawing.Size(88, 25);
@@ -99,7 +99,7 @@
             // 
             // passtxt
             // 
-            this.passtxt.Location = new System.Drawing.Point(467, 307);
+            this.passtxt.Location = new System.Drawing.Point(390, 269);
             this.passtxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.passtxt.Name = "passtxt";
             this.passtxt.PasswordChar = '*';
@@ -111,7 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(371, 457);
+            this.label1.Location = new System.Drawing.Point(293, 383);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 19);
             this.label1.TabIndex = 7;
@@ -123,7 +123,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.SystemColors.InfoText;
-            this.linkLabel1.Location = new System.Drawing.Point(559, 457);
+            this.linkLabel1.Location = new System.Drawing.Point(468, 383);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(58, 19);
             this.linkLabel1.TabIndex = 8;
@@ -137,7 +137,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(153)))), ((int)(((byte)(144)))));
-            this.ClientSize = new System.Drawing.Size(977, 608);
+            this.ClientSize = new System.Drawing.Size(824, 455);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.loginbtn);
@@ -147,10 +147,11 @@
             this.Controls.Add(this.passtxt);
             this.Controls.Add(this.titlelbl);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "LoginForm";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

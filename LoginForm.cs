@@ -22,12 +22,6 @@ namespace Farm_School
             string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
             return Regex.IsMatch(email, pattern);
         }
-      
-        private void Loginbtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
 
         private void LinkLabel1_LinkClicked(object sender, EventArgs e)
         {
@@ -68,7 +62,7 @@ namespace Farm_School
                 {
                     adminForm adminForm = new adminForm();
                     adminForm.Show();
-                    // Hide current (Login) form
+                    // Hide (Login) form
                     this.Hide();
                 }
             }
@@ -76,6 +70,11 @@ namespace Farm_School
             {
                 MessageBox.Show("Login Failed");
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

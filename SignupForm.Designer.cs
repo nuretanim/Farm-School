@@ -52,7 +52,7 @@
             // 
             this.titlelbl.AutoSize = true;
             this.titlelbl.Font = new System.Drawing.Font("Times New Roman", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titlelbl.Location = new System.Drawing.Point(47, 49);
+            this.titlelbl.Location = new System.Drawing.Point(38, 30);
             this.titlelbl.Name = "titlelbl";
             this.titlelbl.Size = new System.Drawing.Size(262, 33);
             this.titlelbl.TabIndex = 0;
@@ -65,7 +65,7 @@
             this.rolecmb.Items.AddRange(new object[] {
             "Farmer",
             "Instructor"});
-            this.rolecmb.Location = new System.Drawing.Point(468, 110);
+            this.rolecmb.Location = new System.Drawing.Point(433, 86);
             this.rolecmb.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rolecmb.Name = "rolecmb";
             this.rolecmb.Size = new System.Drawing.Size(148, 23);
@@ -75,7 +75,7 @@
             // 
             this.rolelbl.AutoSize = true;
             this.rolelbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.rolelbl.Location = new System.Drawing.Point(309, 112);
+            this.rolelbl.Location = new System.Drawing.Point(274, 88);
             this.rolelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.rolelbl.Name = "rolelbl";
             this.rolelbl.Size = new System.Drawing.Size(45, 21);
@@ -86,7 +86,7 @@
             // registerbtn
             // 
             this.registerbtn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerbtn.Location = new System.Drawing.Point(438, 454);
+            this.registerbtn.Location = new System.Drawing.Point(293, 382);
             this.registerbtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.registerbtn.Name = "registerbtn";
             this.registerbtn.Size = new System.Drawing.Size(132, 28);
@@ -98,7 +98,7 @@
             // 
             this.fnamelbl.AutoSize = true;
             this.fnamelbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.fnamelbl.Location = new System.Drawing.Point(309, 180);
+            this.fnamelbl.Location = new System.Drawing.Point(274, 156);
             this.fnamelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fnamelbl.Name = "fnamelbl";
             this.fnamelbl.Size = new System.Drawing.Size(86, 21);
@@ -110,7 +110,7 @@
             // 
             this.emaillbl.AutoSize = true;
             this.emaillbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.emaillbl.Location = new System.Drawing.Point(309, 144);
+            this.emaillbl.Location = new System.Drawing.Point(274, 120);
             this.emaillbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.emaillbl.Name = "emaillbl";
             this.emaillbl.Size = new System.Drawing.Size(57, 21);
@@ -121,7 +121,7 @@
             // emailtxt
             // 
             this.emailtxt.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailtxt.Location = new System.Drawing.Point(468, 143);
+            this.emailtxt.Location = new System.Drawing.Point(433, 119);
             this.emailtxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.emailtxt.Name = "emailtxt";
             this.emailtxt.Size = new System.Drawing.Size(148, 22);
@@ -132,7 +132,7 @@
             // 
             this.passlbl.AutoSize = true;
             this.passlbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.passlbl.Location = new System.Drawing.Point(309, 219);
+            this.passlbl.Location = new System.Drawing.Point(274, 195);
             this.passlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passlbl.Name = "passlbl";
             this.passlbl.Size = new System.Drawing.Size(84, 21);
@@ -144,7 +144,7 @@
             // 
             this.confirmpasslbl.AutoSize = true;
             this.confirmpasslbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.confirmpasslbl.Location = new System.Drawing.Point(309, 261);
+            this.confirmpasslbl.Location = new System.Drawing.Point(274, 237);
             this.confirmpasslbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.confirmpasslbl.Name = "confirmpasslbl";
             this.confirmpasslbl.Size = new System.Drawing.Size(151, 21);
@@ -155,7 +155,7 @@
             // fnametxt
             // 
             this.fnametxt.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fnametxt.Location = new System.Drawing.Point(468, 179);
+            this.fnametxt.Location = new System.Drawing.Point(433, 155);
             this.fnametxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.fnametxt.Name = "fnametxt";
             this.fnametxt.Size = new System.Drawing.Size(148, 22);
@@ -165,7 +165,7 @@
             // locationtxt
             // 
             this.locationtxt.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.locationtxt.Location = new System.Drawing.Point(468, 303);
+            this.locationtxt.Location = new System.Drawing.Point(433, 279);
             this.locationtxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.locationtxt.Name = "locationtxt";
             this.locationtxt.Size = new System.Drawing.Size(148, 22);
@@ -175,7 +175,7 @@
             // passtxt
             // 
             this.passtxt.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passtxt.Location = new System.Drawing.Point(468, 219);
+            this.passtxt.Location = new System.Drawing.Point(433, 195);
             this.passtxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.passtxt.Name = "passtxt";
             this.passtxt.PasswordChar = '*';
@@ -186,7 +186,7 @@
             // confirmpasstxt
             // 
             this.confirmpasstxt.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmpasstxt.Location = new System.Drawing.Point(468, 260);
+            this.confirmpasstxt.Location = new System.Drawing.Point(433, 236);
             this.confirmpasstxt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.confirmpasstxt.Name = "confirmpasstxt";
             this.confirmpasstxt.PasswordChar = '*';
@@ -198,7 +198,7 @@
             // 
             this.locationlbl.AutoSize = true;
             this.locationlbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.locationlbl.Location = new System.Drawing.Point(309, 304);
+            this.locationlbl.Location = new System.Drawing.Point(274, 280);
             this.locationlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.locationlbl.Name = "locationlbl";
             this.locationlbl.Size = new System.Drawing.Size(76, 21);
@@ -210,13 +210,12 @@
             // 
             this.expertiselbl.AutoSize = true;
             this.expertiselbl.Font = new System.Drawing.Font("Times New Roman", 14F);
-            this.expertiselbl.Location = new System.Drawing.Point(309, 348);
+            this.expertiselbl.Location = new System.Drawing.Point(274, 324);
             this.expertiselbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.expertiselbl.Name = "expertiselbl";
             this.expertiselbl.Size = new System.Drawing.Size(79, 21);
             this.expertiselbl.TabIndex = 29;
             this.expertiselbl.Text = "Expertise";
-            //this.expertiselbl.Click += new System.EventHandler(this.Expertiselbl_Click);
             // 
             // expertisecmb
             // 
@@ -228,7 +227,7 @@
             "Agribusiness",
             "Organic Farming",
             "Farm Technology"});
-            this.expertisecmb.Location = new System.Drawing.Point(468, 348);
+            this.expertisecmb.Location = new System.Drawing.Point(433, 324);
             this.expertisecmb.Name = "expertisecmb";
             this.expertisecmb.Size = new System.Drawing.Size(148, 21);
             this.expertisecmb.TabIndex = 31;
@@ -237,7 +236,7 @@
             // btloginbtn
             // 
             this.btloginbtn.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btloginbtn.Location = new System.Drawing.Point(808, 413);
+            this.btloginbtn.Location = new System.Drawing.Point(493, 381);
             this.btloginbtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btloginbtn.Name = "btloginbtn";
             this.btloginbtn.Size = new System.Drawing.Size(88, 31);
@@ -251,7 +250,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(153)))), ((int)(((byte)(144)))));
-            this.ClientSize = new System.Drawing.Size(935, 535);
+            this.ClientSize = new System.Drawing.Size(828, 459);
             this.Controls.Add(this.btloginbtn);
             this.Controls.Add(this.expertisecmb);
             this.Controls.Add(this.expertiselbl);
@@ -269,6 +268,7 @@
             this.Controls.Add(this.emaillbl);
             this.Controls.Add(this.emailtxt);
             this.Controls.Add(this.titlelbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "SignupForm";
             this.Text = "Sign up";
             this.Load += new System.EventHandler(this.Form1_Load);

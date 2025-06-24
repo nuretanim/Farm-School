@@ -72,7 +72,7 @@ namespace Farm_School
                 return;
             }
 
-            // Registration logic here (e.g., saving to database)
+            // Registration logic here (saving to database)
            /* bool success = RegisterUser(role, name, email, password, location, expertise);
 
             if (success)
