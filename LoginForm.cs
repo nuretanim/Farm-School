@@ -76,5 +76,11 @@ namespace Farm_School
         {
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+
+        }
     }
 }

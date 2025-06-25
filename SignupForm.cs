@@ -165,5 +165,10 @@ namespace Farm_School
         {
 
         }
+
+        private void registerbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

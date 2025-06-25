@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminForm));
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.manageInstructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,25 +44,20 @@
             this.farmerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.instructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1.SuspendLayout();
+            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.myProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // dataGridView1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageInstructorToolStripMenuItem,
-            this.coursesViewToolStripMenuItem,
-            this.bATCHMANAGEMENTToolStripMenuItem,
-            this.aNNOUNCEMENTToolStripMenuItem,
-            this.vIEWFARMERSPROFILESToolStripMenuItem,
-            this.informationToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(828, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(27, 126);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(776, 279);
+            this.dataGridView1.TabIndex = 1;
             // 
             // manageInstructorToolStripMenuItem
             // 
@@ -130,26 +126,29 @@
             // aNNOUNCEMENTToolStripMenuItem
             // 
             this.aNNOUNCEMENTToolStripMenuItem.Name = "aNNOUNCEMENTToolStripMenuItem";
-            this.aNNOUNCEMENTToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
-            this.aNNOUNCEMENTToolStripMenuItem.Text = "ANNOUNCEMENT";
+            this.aNNOUNCEMENTToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.aNNOUNCEMENTToolStripMenuItem.Text = "Announcement";
             // 
             // vIEWFARMERSPROFILESToolStripMenuItem
             // 
             this.vIEWFARMERSPROFILESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.farmerToolStripMenuItem,
-            this.instructorToolStripMenuItem});
+            this.myProfileToolStripMenuItem,
+            this.instructorToolStripMenuItem,
+            this.farmerToolStripMenuItem});
             this.vIEWFARMERSPROFILESToolStripMenuItem.Name = "vIEWFARMERSPROFILESToolStripMenuItem";
             this.vIEWFARMERSPROFILESToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.vIEWFARMERSPROFILESToolStripMenuItem.Text = "View Profiles";
             // 
             // farmerToolStripMenuItem
             // 
+            this.farmerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("farmerToolStripMenuItem.Image")));
             this.farmerToolStripMenuItem.Name = "farmerToolStripMenuItem";
             this.farmerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.farmerToolStripMenuItem.Text = "Farmer";
             // 
             // instructorToolStripMenuItem
             // 
+            this.instructorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("instructorToolStripMenuItem.Image")));
             this.instructorToolStripMenuItem.Name = "instructorToolStripMenuItem";
             this.instructorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.instructorToolStripMenuItem.Text = "Instructor";
@@ -160,13 +159,35 @@
             this.informationToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.informationToolStripMenuItem.Text = "Information";
             // 
-            // dataGridView1
+            // logOutToolStripMenuItem
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 122);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 279);
-            this.dataGridView1.TabIndex = 1;
+            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.logOutToolStripMenuItem.Text = "Log Out";
+            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.manageInstructorToolStripMenuItem,
+            this.coursesViewToolStripMenuItem,
+            this.bATCHMANAGEMENTToolStripMenuItem,
+            this.aNNOUNCEMENTToolStripMenuItem,
+            this.vIEWFARMERSPROFILESToolStripMenuItem,
+            this.informationToolStripMenuItem,
+            this.logOutToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(828, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // myProfileToolStripMenuItem
+            // 
+            this.myProfileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("myProfileToolStripMenuItem.Image")));
+            this.myProfileToolStripMenuItem.Name = "myProfileToolStripMenuItem";
+            this.myProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.myProfileToolStripMenuItem.Text = "My Profile";
             // 
             // adminForm
             // 
@@ -176,35 +197,37 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "adminForm";
             this.Text = "Admin Dashboard";
             this.Load += new System.EventHandler(this.AdminForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ToolStripMenuItem manageInstructorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem coursesViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aDDToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem coursesViewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cREATEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aSSIGNToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sCHEDULECOURSEToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bATCHMANAGEMENTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aNNOUNCEMENTToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vIEWFARMERSPROFILESToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ToolStripMenuItem farmerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem instructorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
     }
 }
