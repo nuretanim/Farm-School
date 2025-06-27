@@ -29,205 +29,154 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminForm));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.manageInstructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dELETEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dELETEToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.coursesViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cREATEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aSSIGNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sCHEDULECOURSEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bATCHMANAGEMENTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aNNOUNCEMENTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vIEWFARMERSPROFILESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.farmerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.instructorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.myProfileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.userMbtn = new System.Windows.Forms.Button();
+            this.courseMbtn = new System.Windows.Forms.Button();
+            this.announcebtn = new System.Windows.Forms.Button();
+            this.batchMbtn = new System.Windows.Forms.Button();
+            this.informationbtn = new System.Windows.Forms.Button();
+            this.viewprofilesbtn = new System.Windows.Forms.Button();
+            this.logoutbtn = new System.Windows.Forms.Button();
+            this.textlbl2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // userMbtn
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 126);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(776, 279);
-            this.dataGridView1.TabIndex = 1;
+            this.userMbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.userMbtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userMbtn.Location = new System.Drawing.Point(25, 104);
+            this.userMbtn.Name = "userMbtn";
+            this.userMbtn.Size = new System.Drawing.Size(226, 54);
+            this.userMbtn.TabIndex = 2;
+            this.userMbtn.Text = "User Management";
+            this.userMbtn.UseVisualStyleBackColor = false;
+            this.userMbtn.Click += new System.EventHandler(this.userMbtn_Click);
             // 
-            // manageInstructorToolStripMenuItem
+            // courseMbtn
             // 
-            this.manageInstructorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aDDToolStripMenuItem,
-            this.dELETEToolStripMenuItem,
-            this.dELETEToolStripMenuItem1});
-            this.manageInstructorToolStripMenuItem.Name = "manageInstructorToolStripMenuItem";
-            this.manageInstructorToolStripMenuItem.Size = new System.Drawing.Size(116, 20);
-            this.manageInstructorToolStripMenuItem.Text = "User Management";
-            this.manageInstructorToolStripMenuItem.Click += new System.EventHandler(this.ManageInstructorToolStripMenuItem_Click);
+            this.courseMbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.courseMbtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.courseMbtn.Location = new System.Drawing.Point(25, 217);
+            this.courseMbtn.Name = "courseMbtn";
+            this.courseMbtn.Size = new System.Drawing.Size(226, 54);
+            this.courseMbtn.TabIndex = 3;
+            this.courseMbtn.Text = "Course Management";
+            this.courseMbtn.UseVisualStyleBackColor = false;
+            this.courseMbtn.Click += new System.EventHandler(this.courseMbtn_Click);
             // 
-            // aDDToolStripMenuItem
+            // announcebtn
             // 
-            this.aDDToolStripMenuItem.Name = "aDDToolStripMenuItem";
-            this.aDDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aDDToolStripMenuItem.Text = "EDIT";
-            this.aDDToolStripMenuItem.Click += new System.EventHandler(this.ADDToolStripMenuItem_Click);
+            this.announcebtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.announcebtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.announcebtn.Location = new System.Drawing.Point(574, 104);
+            this.announcebtn.Name = "announcebtn";
+            this.announcebtn.Size = new System.Drawing.Size(226, 54);
+            this.announcebtn.TabIndex = 4;
+            this.announcebtn.Text = "Announcement";
+            this.announcebtn.UseVisualStyleBackColor = false;
+            this.announcebtn.Click += new System.EventHandler(this.announcebtn_Click);
             // 
-            // dELETEToolStripMenuItem
+            // batchMbtn
             // 
-            this.dELETEToolStripMenuItem.Name = "dELETEToolStripMenuItem";
-            this.dELETEToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dELETEToolStripMenuItem.Text = "ADD";
+            this.batchMbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.batchMbtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.batchMbtn.Location = new System.Drawing.Point(25, 336);
+            this.batchMbtn.Name = "batchMbtn";
+            this.batchMbtn.Size = new System.Drawing.Size(226, 54);
+            this.batchMbtn.TabIndex = 5;
+            this.batchMbtn.Text = "Batch Management";
+            this.batchMbtn.UseVisualStyleBackColor = false;
             // 
-            // dELETEToolStripMenuItem1
+            // informationbtn
             // 
-            this.dELETEToolStripMenuItem1.Name = "dELETEToolStripMenuItem1";
-            this.dELETEToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.dELETEToolStripMenuItem1.Text = "DELETE";
+            this.informationbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.informationbtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.informationbtn.Location = new System.Drawing.Point(574, 336);
+            this.informationbtn.Name = "informationbtn";
+            this.informationbtn.Size = new System.Drawing.Size(226, 54);
+            this.informationbtn.TabIndex = 6;
+            this.informationbtn.Text = "Information";
+            this.informationbtn.UseVisualStyleBackColor = false;
             // 
-            // coursesViewToolStripMenuItem
+            // viewprofilesbtn
             // 
-            this.coursesViewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cREATEToolStripMenuItem,
-            this.aSSIGNToolStripMenuItem,
-            this.sCHEDULECOURSEToolStripMenuItem});
-            this.coursesViewToolStripMenuItem.Name = "coursesViewToolStripMenuItem";
-            this.coursesViewToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
-            this.coursesViewToolStripMenuItem.Text = "Course Management";
+            this.viewprofilesbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.viewprofilesbtn.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewprofilesbtn.Location = new System.Drawing.Point(574, 217);
+            this.viewprofilesbtn.Name = "viewprofilesbtn";
+            this.viewprofilesbtn.Size = new System.Drawing.Size(226, 54);
+            this.viewprofilesbtn.TabIndex = 7;
+            this.viewprofilesbtn.Text = "View Profiles";
+            this.viewprofilesbtn.UseVisualStyleBackColor = false;
             // 
-            // cREATEToolStripMenuItem
+            // logoutbtn
             // 
-            this.cREATEToolStripMenuItem.Name = "cREATEToolStripMenuItem";
-            this.cREATEToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.cREATEToolStripMenuItem.Text = "CREATE";
+            this.logoutbtn.BackColor = System.Drawing.Color.Crimson;
+            this.logoutbtn.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutbtn.Location = new System.Drawing.Point(349, 404);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.Size = new System.Drawing.Size(128, 43);
+            this.logoutbtn.TabIndex = 8;
+            this.logoutbtn.Text = "Log Out";
+            this.logoutbtn.UseVisualStyleBackColor = false;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
-            // aSSIGNToolStripMenuItem
+            // textlbl2
             // 
-            this.aSSIGNToolStripMenuItem.Name = "aSSIGNToolStripMenuItem";
-            this.aSSIGNToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.aSSIGNToolStripMenuItem.Text = "ASSIGN";
+            this.textlbl2.AutoSize = true;
+            this.textlbl2.Font = new System.Drawing.Font("Britannic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textlbl2.Location = new System.Drawing.Point(252, 26);
+            this.textlbl2.Name = "textlbl2";
+            this.textlbl2.Size = new System.Drawing.Size(325, 53);
+            this.textlbl2.TabIndex = 9;
+            this.textlbl2.Text = "FARM SCHOOL";
             // 
-            // sCHEDULECOURSEToolStripMenuItem
+            // pictureBox1
             // 
-            this.sCHEDULECOURSEToolStripMenuItem.Name = "sCHEDULECOURSEToolStripMenuItem";
-            this.sCHEDULECOURSEToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.sCHEDULECOURSEToolStripMenuItem.Text = "SCHEDULE COURSES";
-            // 
-            // bATCHMANAGEMENTToolStripMenuItem
-            // 
-            this.bATCHMANAGEMENTToolStripMenuItem.Name = "bATCHMANAGEMENTToolStripMenuItem";
-            this.bATCHMANAGEMENTToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
-            this.bATCHMANAGEMENTToolStripMenuItem.Text = "Batch Management";
-            // 
-            // aNNOUNCEMENTToolStripMenuItem
-            // 
-            this.aNNOUNCEMENTToolStripMenuItem.Name = "aNNOUNCEMENTToolStripMenuItem";
-            this.aNNOUNCEMENTToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
-            this.aNNOUNCEMENTToolStripMenuItem.Text = "Announcement";
-            // 
-            // vIEWFARMERSPROFILESToolStripMenuItem
-            // 
-            this.vIEWFARMERSPROFILESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.myProfileToolStripMenuItem,
-            this.instructorToolStripMenuItem,
-            this.farmerToolStripMenuItem});
-            this.vIEWFARMERSPROFILESToolStripMenuItem.Name = "vIEWFARMERSPROFILESToolStripMenuItem";
-            this.vIEWFARMERSPROFILESToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.vIEWFARMERSPROFILESToolStripMenuItem.Text = "View Profiles";
-            // 
-            // farmerToolStripMenuItem
-            // 
-            this.farmerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("farmerToolStripMenuItem.Image")));
-            this.farmerToolStripMenuItem.Name = "farmerToolStripMenuItem";
-            this.farmerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.farmerToolStripMenuItem.Text = "Farmer";
-            // 
-            // instructorToolStripMenuItem
-            // 
-            this.instructorToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("instructorToolStripMenuItem.Image")));
-            this.instructorToolStripMenuItem.Name = "instructorToolStripMenuItem";
-            this.instructorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.instructorToolStripMenuItem.Text = "Instructor";
-            // 
-            // informationToolStripMenuItem
-            // 
-            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
-            this.informationToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.informationToolStripMenuItem.Text = "Information";
-            // 
-            // logOutToolStripMenuItem
-            // 
-            this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.logOutToolStripMenuItem.Text = "Log Out";
-            this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.manageInstructorToolStripMenuItem,
-            this.coursesViewToolStripMenuItem,
-            this.bATCHMANAGEMENTToolStripMenuItem,
-            this.aNNOUNCEMENTToolStripMenuItem,
-            this.vIEWFARMERSPROFILESToolStripMenuItem,
-            this.informationToolStripMenuItem,
-            this.logOutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(828, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // myProfileToolStripMenuItem
-            // 
-            this.myProfileToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("myProfileToolStripMenuItem.Image")));
-            this.myProfileToolStripMenuItem.Name = "myProfileToolStripMenuItem";
-            this.myProfileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.myProfileToolStripMenuItem.Text = "My Profile";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(279, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(273, 234);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // adminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(828, 459);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textlbl2);
+            this.Controls.Add(this.logoutbtn);
+            this.Controls.Add(this.viewprofilesbtn);
+            this.Controls.Add(this.informationbtn);
+            this.Controls.Add(this.batchMbtn);
+            this.Controls.Add(this.announcebtn);
+            this.Controls.Add(this.courseMbtn);
+            this.Controls.Add(this.userMbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "adminForm";
             this.Text = "Admin Dashboard";
             this.Load += new System.EventHandler(this.AdminForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ToolStripMenuItem manageInstructorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aDDToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dELETEToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem coursesViewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cREATEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aSSIGNToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sCHEDULECOURSEToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bATCHMANAGEMENTToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aNNOUNCEMENTToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem vIEWFARMERSPROFILESToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem farmerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem instructorToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem myProfileToolStripMenuItem;
+        private System.Windows.Forms.Button userMbtn;
+        private System.Windows.Forms.Button courseMbtn;
+        private System.Windows.Forms.Button announcebtn;
+        private System.Windows.Forms.Button batchMbtn;
+        private System.Windows.Forms.Button informationbtn;
+        private System.Windows.Forms.Button viewprofilesbtn;
+        private System.Windows.Forms.Button logoutbtn;
+        private System.Windows.Forms.Label textlbl2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

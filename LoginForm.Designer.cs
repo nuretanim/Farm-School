@@ -45,12 +45,12 @@
             // 
             this.titlelbl.AutoSize = true;
             this.titlelbl.BackColor = System.Drawing.Color.Transparent;
-            this.titlelbl.Font = new System.Drawing.Font("Britannic Bold", 35F);
+            this.titlelbl.Font = new System.Drawing.Font("Britannic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titlelbl.ForeColor = System.Drawing.Color.Black;
             this.titlelbl.Location = new System.Drawing.Point(84, 67);
             this.titlelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titlelbl.Name = "titlelbl";
-            this.titlelbl.Size = new System.Drawing.Size(318, 52);
+            this.titlelbl.Size = new System.Drawing.Size(325, 53);
             this.titlelbl.TabIndex = 0;
             this.titlelbl.Text = "FARM SCHOOL";
             // 
