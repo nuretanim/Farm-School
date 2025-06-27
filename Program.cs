@@ -16,7 +16,7 @@ namespace Farm_School
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminForm());
+            Application.Run(new LoginForm());
         }
     }
 }

@@ -108,7 +108,7 @@
             // 
             // Emailtxt
             // 
-            this.Emailtxt.Location = new System.Drawing.Point(454, 119);
+            this.Emailtxt.Location = new System.Drawing.Point(435, 119);
             this.Emailtxt.Name = "Emailtxt";
             this.Emailtxt.Size = new System.Drawing.Size(121, 20);
             this.Emailtxt.TabIndex = 7;
@@ -149,7 +149,7 @@
             // 
             this.Emaillbl.AutoSize = true;
             this.Emaillbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Emaillbl.Location = new System.Drawing.Point(451, 86);
+            this.Emaillbl.Location = new System.Drawing.Point(432, 86);
             this.Emaillbl.Name = "Emaillbl";
             this.Emaillbl.Size = new System.Drawing.Size(38, 15);
             this.Emaillbl.TabIndex = 11;

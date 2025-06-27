@@ -60,8 +60,8 @@ namespace Farm_School
                 // Open Admin dashboard
                 if (email == "admin@farmschool.com" && password == "admin123")
                 {
-                    adminForm adminForm = new adminForm();
-                    adminForm.Show();
+                    AdminForm AdminForm = new AdminForm();
+                    AdminForm.Show();
                     // Hide (Login) form
                     this.Hide();
                 }

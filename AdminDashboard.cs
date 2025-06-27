@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,42 +12,57 @@ using Org.BouncyCastle.Tls;
 
 namespace Farm_School
 {
-    public partial class adminForm : Form
+    public partial class AdminForm : Form
     {
-        public adminForm()
+        public object Rolecmb { get; private set; }
+
+        public AdminForm()
         {
             InitializeComponent();
         }
 
-        private void AdminForm_Load(object sender, EventArgs e)
+        private void Announcebtn_Click(object sender, EventArgs e)
         {
-
+            AnnouncementForm announcementForm = new AnnouncementForm();
+            announcementForm.Show();
+            this.Hide();
         }
 
-        private void announcebtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logoutbtn_Click(object sender, EventArgs e)
+        private void Logoutbtn_Click(object sender, EventArgs e)
         {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
             this.Close();
         }
 
-        private void userMbtn_Click(object sender, EventArgs e)
+        private void UserMbtn_Click(object sender, EventArgs e)
         {
             UserManagementForm userManagementForm = new UserManagementForm();
             userManagementForm.Show();
             this.Hide();
         }
 
-        private void courseMbtn_Click(object sender, EventArgs e)
+        private void CourseMbtn_Click(object sender, EventArgs e)
         {
             CourseManagement courseManagement = new CourseManagement();
             courseManagement.Show();
             this.Hide();
+        }
+
+        private void BatchMbtn_Click(object sender, EventArgs e)
+        {
+            BatchManagementForm batchManagementForm = new BatchManagementForm();
+            batchManagementForm.Show();
+            this.Hide();
+        }
+
+        private void viewprofilesbtn_Click(object sender, EventArgs e)
+        {
+
+            ViewProfileForm viewprofileform = new ViewProfileForm();
+            viewprofileform.Show();
+            this.Hide();
+
         }
     }
 }

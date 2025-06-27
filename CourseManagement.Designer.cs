@@ -44,11 +44,9 @@
             this.CourseNamelbl = new System.Windows.Forms.Label();
             this.Durationlbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.textlbl2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DatagvCourse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // DatagvCourse
@@ -96,6 +94,7 @@
             // Addbtn
             // 
             this.Addbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Addbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Addbtn.Location = new System.Drawing.Point(32, 154);
             this.Addbtn.Name = "Addbtn";
             this.Addbtn.Size = new System.Drawing.Size(80, 33);
@@ -107,6 +106,7 @@
             // Deletebtn
             // 
             this.Deletebtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Deletebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Deletebtn.Location = new System.Drawing.Point(32, 299);
             this.Deletebtn.Name = "Deletebtn";
             this.Deletebtn.Size = new System.Drawing.Size(80, 33);
@@ -119,6 +119,7 @@
             // 
             this.Updatebtn.AccessibleDescription = "";
             this.Updatebtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Updatebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Updatebtn.Location = new System.Drawing.Point(32, 233);
             this.Updatebtn.Name = "Updatebtn";
             this.Updatebtn.Size = new System.Drawing.Size(80, 33);
@@ -130,6 +131,7 @@
             // Showbtn
             // 
             this.Showbtn.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.Showbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Showbtn.Location = new System.Drawing.Point(32, 374);
             this.Showbtn.Name = "Showbtn";
             this.Showbtn.Size = new System.Drawing.Size(80, 33);
@@ -141,7 +143,9 @@
             // backbtn3
             // 
             this.backbtn3.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.backbtn3.Location = new System.Drawing.Point(726, 413);
+            this.backbtn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backbtn3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.backbtn3.Location = new System.Drawing.Point(735, 413);
             this.backbtn3.Name = "backbtn3";
             this.backbtn3.Size = new System.Drawing.Size(77, 30);
             this.backbtn3.TabIndex = 9;
@@ -152,69 +156,58 @@
             // Rolelbl
             // 
             this.Rolelbl.AutoSize = true;
-            this.Rolelbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Rolelbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Rolelbl.Location = new System.Drawing.Point(628, 110);
             this.Rolelbl.Name = "Rolelbl";
-            this.Rolelbl.Size = new System.Drawing.Size(97, 15);
+            this.Rolelbl.Size = new System.Drawing.Size(116, 17);
             this.Rolelbl.TabIndex = 15;
             this.Rolelbl.Text = "Instructor Name";
             // 
             // CourseDeslbl
             // 
             this.CourseDeslbl.AutoSize = true;
-            this.CourseDeslbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseDeslbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CourseDeslbl.Location = new System.Drawing.Point(300, 110);
             this.CourseDeslbl.Name = "CourseDeslbl";
-            this.CourseDeslbl.Size = new System.Drawing.Size(114, 15);
+            this.CourseDeslbl.Size = new System.Drawing.Size(136, 17);
             this.CourseDeslbl.TabIndex = 14;
             this.CourseDeslbl.Text = "Course Description";
             // 
             // CourseNamelbl
             // 
             this.CourseNamelbl.AutoSize = true;
-            this.CourseNamelbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CourseNamelbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CourseNamelbl.Location = new System.Drawing.Point(141, 110);
             this.CourseNamelbl.Name = "CourseNamelbl";
-            this.CourseNamelbl.Size = new System.Drawing.Size(81, 15);
+            this.CourseNamelbl.Size = new System.Drawing.Size(98, 17);
             this.CourseNamelbl.TabIndex = 13;
             this.CourseNamelbl.Text = "Course Name";
             // 
             // Durationlbl
             // 
             this.Durationlbl.AutoSize = true;
-            this.Durationlbl.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Durationlbl.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Durationlbl.Location = new System.Drawing.Point(463, 110);
             this.Durationlbl.Name = "Durationlbl";
-            this.Durationlbl.Size = new System.Drawing.Size(62, 15);
+            this.Durationlbl.Size = new System.Drawing.Size(71, 17);
             this.Durationlbl.TabIndex = 16;
             this.Durationlbl.Text = "Durartion";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(548, -76);
+            this.pictureBox1.Location = new System.Drawing.Point(552, -54);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(301, 342);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.ErrorImage = null;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-5, -1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(311, 495);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
-            // 
             // textlbl2
             // 
             this.textlbl2.AutoSize = true;
             this.textlbl2.Font = new System.Drawing.Font("Britannic Bold", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textlbl2.Location = new System.Drawing.Point(262, 20);
+            this.textlbl2.Location = new System.Drawing.Point(253, 20);
             this.textlbl2.Name = "textlbl2";
             this.textlbl2.Size = new System.Drawing.Size(325, 53);
             this.textlbl2.TabIndex = 19;
@@ -238,7 +231,6 @@
             this.Controls.Add(this.Durationlbl);
             this.Controls.Add(this.Showbtn);
             this.Controls.Add(this.Durationtxt);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Rolelbl);
             this.Controls.Add(this.backbtn3);
             this.Controls.Add(this.Rolecmb2);
@@ -249,7 +241,6 @@
             this.Text = "Course Management";
             ((System.ComponentModel.ISupportInitialize)(this.DatagvCourse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -272,7 +263,6 @@
         private System.Windows.Forms.Label CourseNamelbl;
         private System.Windows.Forms.Label Durationlbl;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label textlbl2;
     }
 }

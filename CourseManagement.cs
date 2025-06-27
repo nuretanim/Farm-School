@@ -56,8 +56,8 @@ namespace Farm_School
 
         private void Backbtn3_Click(object sender, EventArgs e)
         {
-            adminForm adminForm = new adminForm();
-            adminForm.Show();
+            AdminForm AdminForm = new AdminForm();
+            AdminForm.Show();
             this.Hide();
         }
 
