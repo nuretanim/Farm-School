@@ -51,8 +51,6 @@ namespace Farm_School
                 MessageBox.Show("Please enter a valid email.", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            // Simulated check – replace with actual user credential check
             if (email == emailtxt.Text && email == emailtxt.Text)
             {
                 MessageBox.Show("Successfully Logged in");
@@ -62,7 +60,6 @@ namespace Farm_School
                 {
                     AdminForm AdminForm = new AdminForm();
                     AdminForm.Show();
-                    // Hide (Login) form
                     this.Hide();
                 }
             }
